@@ -1,0 +1,47 @@
+{
+  "name": "css-sprite-lwip",
+  "version": "1.0.0",
+  "description": "lwip processing engine for css-sprite",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aslansky/css-sprite-lwip.git"
+  },
+  "homepage": "https://github.com/aslansky/css-sprite-lwip",
+  "bugs": {
+    "url": "https://github.com/aslansky/css-sprite-lwip/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/aslansky/css-sprite-lwip/blob/master/LICENSE-MIT"
+    }
+  ],
+  "author": {
+    "name": "Alexander Slansky",
+    "email": "alexander@slansky.net",
+    "url": "http://slansky.net"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "hint": "eslint index.js",
+    "style": "jscs index.js"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "sprites",
+    "sprite",
+    "lwip",
+    "css-sprite"
+  ],
+  "dependencies": {
+    "lwip": "0.0.6",
+    "bluebird": "^2.9.16"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.1.0"
+  }
+}
