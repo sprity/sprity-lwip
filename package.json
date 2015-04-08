@@ -1,7 +1,7 @@
 {
   "name": "css-sprite-lwip",
   "version": "1.0.0",
-  "description": "lwip processing engine for css-sprite",
+  "description": "lwip image processing engine for css-sprite",
   "repository": {
     "type": "git",
     "url": "https://github.com/aslansky/css-sprite-lwip.git"
