@@ -1,29 +1,29 @@
-# css-sprite-lwip
+# sprity-lwip
 
-[![NPM version](https://badge.fury.io/js/css-sprite-lwip.svg)](http://badge.fury.io/js/css-sprite-lwip) [![Build Status](https://travis-ci.org/aslansky/css-sprite-lwip.svg?branch=master)](https://travis-ci.org/aslansky/css-sprite-lwip) [![Dependencies](https://david-dm.org/aslansky/css-sprite-lwip.svg)](https://david-dm.org/aslansky/css-sprite-lwip)
+[![NPM version](https://badge.fury.io/js/sprity-lwip.svg)](http://badge.fury.io/js/sprity-lwip) [![Build Status](https://travis-ci.org/sprity/sprity-lwip.svg?branch=master)](https://travis-ci.org/sprity/sprity-lwip) [![Dependencies](https://david-dm.org/sprity/sprity-lwip.svg)](https://david-dm.org/sprity/sprity-lwip)
 
-> Image processor for [css-sprite](https://npmjs.org/package/css-sprite) that uses [lwip](https://github.com/EyalAr/lwip) as the image processing library
+> Image processor for [sprity](https://npmjs.org/package/sprity) that uses [lwip](https://github.com/EyalAr/lwip) as the image processing library
 
-> [css-sprite's](https://npmjs.org/package/css-sprite) default image processor
+> [sprity's](https://npmjs.org/package/sprity) default image processor
 
 > javascript only, no external library dependencies
 
 ## Requirements
 
-- [css-sprite](https://npmjs.org/package/css-sprite) version >= 1.0
+- [sprity](https://npmjs.org/package/sprity) version >= 1.0
 
 ## Install
 
-By default `css-sprite-lwip` is installed width `css-sprite`.
+By default `sprity-lwip` is installed with `sprity`.
 
 ```sh
-npm install css-sprite
+npm install sprity
 ```
 
-If you want to use the command line interface of `css-sprite` install it globally.
+If you want to use the command line interface of `sprity` install it globally.
 
 ```
-npm install css-sprite -g
+npm install sprity -g
 ```
 
 ## Options
@@ -38,4 +38,4 @@ npm install css-sprite -g
 
 ## Usage
 
-See [css-sprite](https://npmjs.org/package/css-sprite) documentation
+See [sprity](https://npmjs.org/package/sprity) documentation

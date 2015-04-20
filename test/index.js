@@ -25,7 +25,7 @@ var tiles = [{
   contents: fs.readFileSync('test/fixtures/jpg.jpg')
 }];
 
-describe('css-sprite-lwip', function () {
+describe('sprity-lwip', function () {
   it('should return a png image buffer', function (done) {
     lwipProc.create(tiles, {
       width: 520,
