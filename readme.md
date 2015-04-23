@@ -2,7 +2,7 @@
 
 [![NPM version](https://badge.fury.io/js/sprity-lwip.svg)](http://badge.fury.io/js/sprity-lwip) [![Build Status](https://travis-ci.org/sprity/sprity-lwip.svg?branch=master)](https://travis-ci.org/sprity/sprity-lwip) [![Dependencies](https://david-dm.org/sprity/sprity-lwip.svg)](https://david-dm.org/sprity/sprity-lwip)
 
-> Image processor for [sprity](https://npmjs.org/package/sprity) that uses [lwip](https://github.com/EyalAr/lwip) as the image processing library
+> Image processor for [sprity](https://npmjs.org/package/sprity) that uses [lwip](https://www.npmjs.com/package/lwip) as the image processing library
 
 > [sprity's](https://npmjs.org/package/sprity) default image processor
 
@@ -25,6 +25,11 @@ If you want to use the command line interface of `sprity` install it globally.
 ```
 npm install sprity -g
 ```
+
+## Supported image formats
+
+* png (**Default**)
+* jpg
 
 ## Options
 
