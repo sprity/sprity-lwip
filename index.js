@@ -45,7 +45,7 @@ var paste = function (tile, canvas) {
 
 var toBuffer = function (canvas, opt) {
   return new Promise(function (resolve, reject) {
-    var type = opt.type || 'PNG';
+    var type = opt.type || 'png';
     canvas.toBuffer(type, {}, function (err, buf) {
       if (!err) {
         resolve({
