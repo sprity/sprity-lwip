@@ -63,9 +63,9 @@ var toBuffer = function (canvas, opt) {
   });
 };
 
-var scaleImage = function (base, opt) {
+var scaleImage = function (base, type, opt) {
   return new Promise(function (resolve, reject) {
-    lwip.open(base, opt.type, function (err, img) {
+    lwip.open(base, type, function (err, img) {
       if (err) {
         reject(err);
       }
@@ -97,7 +97,7 @@ module.exports = {
       });
   },
   scale: function (base, opt) {
-    return scaleImage(base.contents, opt)
+    return scaleImage(base.contents, base.type, opt)
       .then(function (image) {
         return toBuffer(image, opt);
       });
