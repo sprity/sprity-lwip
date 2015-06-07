@@ -31,7 +31,9 @@ describe('sprity-lwip', function () {
       width: 520,
       height: 656,
       bgColor: [0, 0, 0, 0],
-      type: 'png'
+      options: {
+        format: 'png'
+      }
     }).then(function (image) {
       image.should.have.property('width', 520);
       image.should.have.property('height', 656);
@@ -46,12 +48,31 @@ describe('sprity-lwip', function () {
       width: 520,
       height: 656,
       bgColor: [0, 0, 0, 0],
-      type: 'jpg'
+      options: {
+        format: 'jpg'
+      }
     }).then(function (image) {
       image.should.have.property('width', 520);
       image.should.have.property('height', 656);
       image.should.have.property('contents');
       image.contents.toString().should.equal(fs.readFileSync('test/expected/image.jpg').toString());
+      done();
+    });
+  });
+
+  it('should return a gif image buffer', function (done) {
+    lwipProc.create(tiles, {
+      width: 520,
+      height: 656,
+      bgColor: [0, 0, 0, 0],
+      options: {
+        format: 'gif'
+      }
+    }).then(function (image) {
+      image.should.have.property('width', 520);
+      image.should.have.property('height', 656);
+      image.should.have.property('contents');
+      image.contents.toString().should.equal(fs.readFileSync('test/expected/image.gif').toString());
       done();
     });
   });

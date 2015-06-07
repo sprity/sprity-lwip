@@ -3,8 +3,8 @@
 var Promise = require('bluebird');
 var lwip = require('lwip');
 
-var getBgColor = function (color, type) {
-  if (type === 'jpg') {
+var getBgColor = function (color, format) {
+  if (format === 'jpg') {
     return [color[0], color[1], color[2], 100];
   }
   return [color[0], color[1], color[2], color[3]];
@@ -45,12 +45,12 @@ var paste = function (tile, canvas) {
 
 var toBuffer = function (canvas, opt) {
   return new Promise(function (resolve, reject) {
-    var type = opt.options.format || 'png';
-    canvas.toBuffer(type, {}, function (err, buf) {
+    var format = opt.options && opt.options.format ? opt.options.format : 'png';
+    canvas.toBuffer(format, {}, function (err, buf) {
       if (!err) {
         resolve({
-          type: type,
-          mimeType: 'image/' + type,
+          type: format,
+          mimeType: 'image/' + format,
           contents: buf,
           width: canvas.width(),
           height: canvas.height()
@@ -86,7 +86,8 @@ var scaleImage = function (base, type, opt) {
 
 module.exports = {
   create: function (tiles, opt) {
-    return createCanvas(opt.width, opt.height, getBgColor(opt.bgColor, opt.type || 'png'))
+    var format = opt.options && opt.options.format ? opt.options.format : 'png';
+    return createCanvas(opt.width, opt.height, getBgColor(opt.bgColor, format))
       .then(function (c) {
         return Promise.map(tiles, function (tile) {
           return paste(tile, c);

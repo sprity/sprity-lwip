@@ -30,6 +30,7 @@ npm install sprity -g
 
 * png (**Default**)
 * jpg
+* gif
 
 ## Options
 
