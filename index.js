@@ -70,7 +70,7 @@ var scaleImage = function (base, type, opt) {
         reject(err);
       }
       else {
-        var interpolation = opt['lwip-interpolation'] ? opt['lwip-interpolation'] : 'lanczos';
+        var interpolation = opt['lwip-interpolation'] || opt.options['lwip-interpolation'] || 'lanczos';
         img.scale(opt.scale, interpolation, function (e, image) {
           if (!e) {
             resolve(image);
