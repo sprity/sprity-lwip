@@ -1,6 +1,6 @@
 {
   "name": "sprity-lwip",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "lwip image processing engine for sprity",
   "repository": {
     "type": "git",
