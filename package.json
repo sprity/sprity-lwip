@@ -38,7 +38,7 @@
     "sprity"
   ],
   "dependencies": {
-    "lwip": "0.0.8",
+    "lwip": "0.0.9",
     "bluebird": "^2.9.24"
   },
   "devDependencies": {
