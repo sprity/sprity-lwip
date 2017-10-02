@@ -1,10 +1,10 @@
 {
-  "name": "sprity-lwip",
-  "version": "1.0.7",
+  "name": "ppalka-sprity-lwip",
+  "version": "2.0.0",
   "description": "lwip image processing engine for sprity",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sprity/sprity-lwip.git"
+    "url": "https://github.com/pawelpalka/sprity-lwip.git"
   },
   "homepage": "https://github.com/sprity/sprity-lwip",
   "bugs": {
@@ -22,7 +22,7 @@
     "url": "http://slansky.net"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6.11.0"
   },
   "scripts": {
     "test": "mocha --reporter spec",
