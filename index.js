@@ -1,7 +1,7 @@
 'use strict';
 
 var Promise = require('bluebird');
-var lwip = require('lwip');
+var lwip = require('pajk-lwip');
 
 var getBgColor = function (color, format) {
   if (format === 'jpg') {
